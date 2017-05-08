@@ -1,0 +1,28 @@
+* {
+  box-sizing: border-box;
+}
+
+a, a:hover, a:visited, a:active, a:focus {
+  text-decoration: none;
+  color: inherit;
+}
+
+p {
+  font-family: $play;
+}
+
+h2 {
+  font-family: $archivo;
+  margin: 0;
+  color: $yellow;
+  text-transform: uppercase;
+  font-size: 2em;
+}
+
+h3 {
+  font-family: $archivo;
+  // margin: 0;
+  color: $yellow;
+  text-transform: uppercase;
+  font-size: 1.5em;
+}

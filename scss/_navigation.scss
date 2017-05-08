@@ -1,0 +1,41 @@
+.main-navigation {
+  width: 100%;
+  margin: 20px 0;
+  ul {
+    width: 70%;
+    margin-left: auto;
+    margin-right: auto;
+    display: flex;
+    justify-content: space-between;
+    li {
+      font-family: $allerta;
+      text-transform: uppercase;
+      font-size: 1.3em;
+      color: $med-grey;
+      &:hover {
+        border-bottom: 2px solid $med-grey;
+      }
+    }
+    .current-menu-item {
+      color: $dark-green;
+      border-bottom: 2px solid $dark-green;
+    }
+    @media screen and (max-width: 720px) {
+      flex-direction: column;
+      text-align: center;
+      li:hover {
+        border-bottom: 0;
+        color: $dark-grey;
+      }
+      .current-menu-item {
+        border-bottom: 0;
+      }
+    }
+  }
+  &-product {
+    background-color: $off-white;
+    margin: 0;
+    min-height: 7vh;
+    padding: 10px;
+  }
+}

@@ -1,0 +1,164 @@
+.entry-content {
+  @include content;
+}
+
+
+// Resources Content
+.resources-content {
+  @include content;
+}
+
+.about-content {
+  @include content;
+  text-align: center;
+}
+
+.contact-content {
+  @include content;
+  .two-columns {
+    text-align: center;
+  }
+}
+
+.shop-content {
+  @include content;
+  h3 {
+    margin: 10px 0;
+  }
+}
+
+.products-content {
+  @include content;
+}
+
+.two-columns {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  flex-wrap: wrap;
+  img {
+    width: 100%;
+  }
+  p {
+    width: 50%;
+    padding: 0 20px;
+  }
+  @media screen and (max-width: 650px) {
+    flex-direction: column;
+    img {
+      margin-top: 20px;
+    }
+    p {
+      width: 100%;
+      padding: 0;
+    }
+  }
+}
+
+.products-container {
+  display: flex;
+  flex-direction: row;
+  .left-column {
+    padding: 20px;
+    width: 30%;
+    h4 {
+      font-size: 1.3em;
+      padding: 5px;
+      font-family: $play;
+      font-weight: normal;
+      text-transform: uppercase;
+      text-align: center;
+      color: $med-grey;
+      margin-top: 0;
+      background-color: $off-white;
+      border-top: 2px solid black;
+    }
+  }
+  .right-column {
+    width: 70%;
+    padding: 20px;
+  }
+  @media screen and (max-width: 890px) {
+    flex-direction: column;
+    .left-column {
+      display: none;
+    }
+    .right-column {
+      width: 100%;
+    }
+  }
+}
+
+
+// .contact-content {
+.branch {
+
+  text-align: center;
+  width: 100%;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  margin-bottom: 30px;
+  @media screen and (max-width: 400px) {
+    width: 100%;
+  }
+
+}
+
+
+
+.contact-info {
+  margin-bottom: 30px;
+  width: 100%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  @media screen and (max-width: 500px) {
+    flex-direction: column;
+  }
+  img {
+    width: 40px;
+    margin-right: 10px;
+  }
+  span {
+    font-size: 0.9em;
+    text-align: center;
+  }
+}
+
+.careers {
+  h3 {
+    text-align: center;
+    margin: 20px;
+  }
+}
+.well {
+  background-color: $off-white;
+  margin-bottom: 20px;
+  padding: 5px 20px;
+  h5 {
+    margin: 5px 0;
+  }
+  ol {
+    margin: 0;
+  }
+  a {
+    text-decoration: underline;
+  }
+  h4 {
+    font-family: $play;
+  }
+  p {
+    font-size: 0.9em;
+  }
+}
+
+.apply-button {
+  border: 1px solid $med-grey;
+  padding: 10px;
+  font-size: 1em;
+  text-decoration: none !important;
+  &:hover {
+    background-color: $light-grey;
+  }
+}
